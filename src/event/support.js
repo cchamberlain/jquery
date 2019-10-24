@@ -2,7 +2,8 @@ define( [
 	"../var/document",
 	"../var/support"
 ], function( document, support ) {
-
+// HACK(cochamberlain): The following code breaks CSP and has been disabled.
+/*
 ( function() {
 	var i, eventName,
 		div = document.createElement( "div" );
@@ -22,7 +23,7 @@ define( [
 	// Null elements to avoid leaks in IE.
 	div = null;
 } )();
-
+*/
 return support;
 
 } );
